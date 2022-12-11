@@ -16,7 +16,7 @@ def main():
                 height: 0%;
                 position: fixed;
                 }
-             div.block-container{padding-bottom:4rem;}
+             div.block-container{padding-bottom:3rem;}
            </style>
            """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
