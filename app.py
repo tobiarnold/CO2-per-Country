@@ -34,6 +34,7 @@ def main():
         st.subheader("Megatonnen CO2-Äquivalent 1850-2019 je Land")
         st.plotly_chart(fig,use_container_width=True, config=config)
         AgGrid(df, height=400)
+        st.write("Quelle: Potsdam-Institut für Klimafolgenforschung")
     except:
         st.write("Ein Fehler ist aufgetreten. App bitte neu laden.")
 
