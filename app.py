@@ -30,7 +30,7 @@ def main():
         for country, df2 in dfs.items():
             fig = fig.add_trace(go.Scatter(x=df2["year"], y=df2["value"], name=country))
         fig.update_layout(height= 600)
-        fig.update_layout(margin=dict(l=15, r=0, t=0, b=15))
+        fig.update_layout(margin=dict(l=20, r=0, t=0, b=15))
         fig.update_layout(legend=dict(orientation="h",yanchor="bottom",y=1.02,xanchor="right",x=1))
         st.subheader("Megatonnen CO2-Äquivalent 1850-2019 je Land")
         st.plotly_chart(fig,use_container_width=True, config=config)
